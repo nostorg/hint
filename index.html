@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Zap Zap Zap</title>
+    <title>Prometheus Shrugged</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -61,8 +61,10 @@
     </style>
 </head>
 <body>
-    <h1>Toggle Zaps in Damus</h1>
-    <h1>⚡️</h1>
+    <h1>Restore Zaps</h1>
+
+    <h2>Damus</h2>
+    <h3>Nostrscript</h3>
     
     <a class="toggle-button" href="damus:nostr:nscript1qpshxmgpqqqqqqgtqfsqxlml0uqh7cqqqqppsqg9dehhxarjpehx7um5wf0hxet5ta3x7mmvqqqqxqspqyzsxqgqqyrs5qgxd4jk6mmj0ypqqzqpqyxqzqs2z5q3xqzp5qyyr8qg9qpqqsgpweqsqyqqrg9skggzqpqcczqtqywqqsvcpq93xqsqqqqqcqqqqphqqmcq0gqxzqrsqpesehczp5">⚡️ On</a>
     
@@ -70,8 +72,20 @@
     
     <p>⚠️ Restart the app after running ⚠️</p>
 
-    <footer><a class="follow" href="https://github.com/suhailsaqan/damus-nostrscript">Host this page yourself too</a></footer>
+    <h2>Nostur</h2>
+    <h3>Button Configurator</h3>
 
-    <p class="disclaimer">Not affiliated with Damus.</p>
+    <button onclick="Copy()">Copy</button>
+    <input type="text" class="copy_text" value="💬🔄+⚡️🔖" readonly>
+
+    <script>
+        var copy_text_val = document.querySelector('.copy_text');
+
+        function Copy() {
+          copy_text_val.select();
+          document.execCommand("copy");
+          console.log(copy_text_val.value);
+        }
+    </script>
 </body>
 </html>
