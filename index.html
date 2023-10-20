@@ -20,17 +20,9 @@
         a {
             display: inline-block;
             text-decoration: none;
+            color: #ff00ff;
         }
 
-        .toggle-button {
-            margin: 10px;
-            padding: 10px 20px;
-            background-color: #8400ff;
-            color: #ffffff;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        
         a:hover {
             background-color: #0056b3;
         }
@@ -46,17 +38,20 @@
             color: #777;
         }
 
-        .disclaimer {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            margin: 10px 0;
-            font-size: 14px;
-            color: #aaa;
+        .toggle-button {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #8400ff;
+            color: #ffffff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
 
-        .follow {
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #000;
+                color: #fff;
+            }
         }
     </style>
 </head>
